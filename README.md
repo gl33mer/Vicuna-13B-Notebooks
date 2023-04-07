@@ -1,4 +1,4 @@
-### Context
+# Context
 
 Vicuna-13B is a new open-source chatbot developed by researchers from UC Berkeley, CMU, Stanford, and UC San Diego to address the lack of training and architecture details in existing large language models (LLMs) such as OpenAI's ChatGPT. This chatbot has been fine-tuned from a LLaMA base model using approximately 70,000 user-shared conversations collected from ShareGPT.com with public APIs, resulting in an enhanced dataset.
 
