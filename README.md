@@ -8,10 +8,10 @@ To train Vicuna, the research team collected around 70,000 conversations from Sh
 
 The evaluation framework proposed by the research team offers a promising approach to assessing chatbot performance in a consistent and automated manner. The team's use of diverse question categories and careful prompt engineering highlights the potential for this framework to uncover differences in chatbot performance that may not be easily discernible through human evaluation.
 
-# Repository
+# Assets
 
 This repository has the Jupyter Notebooks to get your instance of Vicuna up and running on Google Colab. We also have another notebook for training this model.
 
-## [For Running on Google Colab with a WebUI](Vicuna_13b_gpu_WebUI.ipynb)
+[For Running on Google Colab with a WebUI](Vicuna_13b_gpu_WebUI.ipynb)
 
-## [For Training on Google Colab](1508_Vicuna_13B_train.ipynb)
+[For Training on Google Colab](1508_Vicuna_13B_train.ipynb)
