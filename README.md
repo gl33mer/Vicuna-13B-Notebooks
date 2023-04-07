@@ -1,4 +1,4 @@
-# Context
+### Context
 
 Vicuna-13B is a new open-source chatbot developed by researchers from UC Berkeley, CMU, Stanford, and UC San Diego to address the lack of training and architecture details in existing large language models (LLMs) such as OpenAI's ChatGPT. This chatbot has been fine-tuned from a LLaMA base model using approximately 70,000 user-shared conversations collected from ShareGPT.com with public APIs, resulting in an enhanced dataset.
 
@@ -12,5 +12,6 @@ The evaluation framework proposed by the research team offers a promising approa
 
 This repository has the Jupyter Notebooks to get your instance of Vicuna up and running on Google Colab. We also have another notebook for training this model.
 
-[Running](Vicuna_13b_gpu_WebUI.ipynb)
-[Training](1508_Vicuna_13B_train.ipynb)
+## [For Running on Google Colab with a WebUI](Vicuna_13b_gpu_WebUI.ipynb)
+
+## [For Training on Google Colab](1508_Vicuna_13B_train.ipynb)
