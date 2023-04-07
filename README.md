@@ -12,3 +12,5 @@ The evaluation framework proposed by the research team offers a promising approa
 
 This repository has the Jupyter Notebooks to get your instance of Vicuna up and running on Google Colab. We also have another notebook for training this model.
 
+[Running](Vicuna_13b_gpu_WebUI.ipynb)
+[Training](1508_Vicuna_13B_train.ipynb)
