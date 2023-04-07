@@ -15,3 +15,18 @@ This repository has the Jupyter Notebooks to get your instance of Vicuna up and 
 [For Running on Google Colab with a WebUI](Vicuna_13b_gpu_WebUI.ipynb)
 
 [For Training on Google Colab](1508_Vicuna_13B_train.ipynb)
+
+# Reduce GPU Memory
+
+Reduce the batch size: One of the easiest ways to reduce GPU memory usage is by reducing the batch size. In the code you provided, you can try reducing the per_device_train_batch_size and per_device_eval_batch_size arguments to a smaller value. However, this may increase the training time since it takes more iterations to cover the entire dataset.
+
+Use mixed precision training: Another way to reduce GPU memory usage is by using mixed precision training. This involves using lower precision floating-point numbers (e.g., float16 instead of float32) for some parts of the computation, which reduces memory usage and can speed up training. In the code you provided, you can try setting the bf16 and tf32 arguments to False to disable mixed precision training.
+
+Use gradient accumulation: If reducing the batch size is not an option, you can try using gradient accumulation. This involves accumulating the gradients over multiple iterations before updating the model parameters, which reduces the memory usage per iteration. In the code you provided, you can try increasing the gradient_accumulation_steps argument to a larger value (e.g., 2, 4, etc.).
+
+Use smaller models: If none of the above options work, you can try using a smaller model. In the code you provided, you can try using a smaller pre-trained model by setting the model_name_or_path argument to a smaller model (e.g., "distilgpt2" instead of "decapoda-research_llama-13b-hf"). However, this may reduce the model's performance on the task.
+
+
+# Tips
+
+This is an on-going project, you should change the configuration on "export CUDA_VISIBLE_DEVICES=0" and also tune the torchrun variables. Don't forget to manually change the .json to fix the problem from LlaMa to Llama.
